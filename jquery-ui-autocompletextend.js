@@ -4,7 +4,7 @@
 
 (function($){
 
-$.widget('ui.autocompletextand',$.ui.autocomplete,{
+$.widget('ui.autocompletextend',$.ui.autocomplete,{
 	version: "1.11.4",
 	defaultElement: "<input>",
 	_create:function()

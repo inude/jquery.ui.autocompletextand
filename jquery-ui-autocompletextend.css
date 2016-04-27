@@ -1,0 +1,19 @@
+.ui-autocompletexpend-container:focus button{
+	color:#003EFF
+}
+
+.ui-autocompletexpend-input-border{
+	border:1px solid gray
+}
+.ui-autocompletexpend-focus-border{
+	border:1px solid #003EFF
+}
+.ui-autocompletexpend-button{
+	background-color: #fff;
+	color:grey;
+	display:inline-block;height:100%
+}
+
+.ui-autocompletexpend-button-focus{
+	color:#003EFF
+}

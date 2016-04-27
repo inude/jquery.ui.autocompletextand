@@ -1,4 +1,4 @@
-# jquery.ui.autocompletextand
+# jquery.ui.autocompletextend
 
 ## 2016-04-27 13:38:52
 1. 添加 add 按钮 及 add 回调

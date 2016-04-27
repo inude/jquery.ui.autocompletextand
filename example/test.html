@@ -6,7 +6,7 @@
 		<title></title>
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="js/jqueryui/jquery-ui.js"></script>
-		<script type="text/javascript" src="js/jqueryui/jquery-ui-autocompletextand.js"></script>
+		<script type="text/javascript" src="js/jqueryui/jquery-ui-autocompletextend.js"></script>
 		<link rel="stylesheet" href="js/jqueryui/jquery-ui.css" />
 		<link rel="stylesheet" href="js/jqueryui/jquery-ui.structure.css" />
 		<link rel="stylesheet" href="js/jqueryui/jquery-ui.theme.css" />
@@ -24,10 +24,10 @@
 		<button type="button" onclick="destroy()">销毁</button>		
 		<script type="text/javascript">
 			var availableTags = [ "ActionScript",   "AppleScript",   "Asp"  ];
-			$( "#expand" ).autocompletextand({autoFocus:true,delay:1, source: availableTags,lookup:function(target,text) {console.log(text)}});
+			$( "#expand" ).autocompletextend({autoFocus:true,delay:1, source: availableTags,lookup:function(target,text) {console.log(text)}});
 			
 			function destroy(){
-				$( "#expand" ).autocompletextand('destroy')
+				$( "#expand" ).autocompletextend('destroy')
 			}
 		</script>
 	</body>

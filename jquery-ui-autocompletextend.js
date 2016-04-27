@@ -36,23 +36,23 @@ $.widget('ui.autocompletextend',$.ui.autocomplete,{
 	},
 	_initStyle:function()
 	{
-		this.container.addClass('ui-autocompletexpand-container ui-autocompletexpand-input-border')
+		this.container.addClass('ui-autocompletexpend-container ui-autocompletexpend-input-border')
 		this.element.css({'border':'0','border-radius':'0'})
 		this.button.css({'padding':'0 2px','border': '0','cursor':'pointer','width':'20px'})
-		this.button.addClass('ui-autocompletexpand-button')		
+		this.button.addClass('ui-autocompletexpend-button')		
 		if(this.addbutton){		 
 		 	this.addbutton.css({'padding':'0 2px','border': '0','cursor':'pointer','width':'20px'})
-			this.addbutton.addClass('ui-autocompletexpand-button')		
+			this.addbutton.addClass('ui-autocompletexpend-button')		
 		}
 	},
 	_initAction:function(){
 		var _this = this;
 		
 		this.element.on({
-			'focus':function(){_this.container.removeClass('ui-autocompletexpand-input-border').addClass('ui-autocompletexpand-focus-border');
-				_this.button.removeClass('ui-autocompletexpand-button-focus').addClass('ui-autocompletexpand-button-focus')
+			'focus':function(){_this.container.removeClass('ui-autocompletexpend-input-border').addClass('ui-autocompletexpend-focus-border');
+				_this.button.removeClass('ui-autocompletexpend-button-focus').addClass('ui-autocompletexpend-button-focus')
 			},
-			'blur':function(){_this.container.addClass('ui-autocompletexpand-input-border').removeClass('ui-autocompletexpand-focus-border');_this.button.removeClass('ui-autocompletexpand-button-focus')}
+			'blur':function(){_this.container.addClass('ui-autocompletexpend-input-border').removeClass('ui-autocompletexpend-focus-border');_this.button.removeClass('ui-autocompletexpend-button-focus')}
 		});
 		
 		this.button.on({'click':function(){	_this._trigger('lookup',null,_this.element.val())}})
